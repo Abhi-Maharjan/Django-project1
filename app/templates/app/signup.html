@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <h1>SignUp Form</h1>
+    <form action="/signup/" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="submit">
+    </form>
+
+    <hr>
+    <h1>For Existing User</h1>
+    <a href="{% url 'login' %}">Login</a>
+</body>
+</html>

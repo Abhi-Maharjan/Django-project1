@@ -1,0 +1,31 @@
+{% extends "app/base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+{% endblock %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+<div id="bd">
+    <!-- Correct way to apply Bootstrap classes -->
+    <h1 id="loginform" >Login Form</h1>
+
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-primary ">
+    </form>
+</div>
+    <hr>
+    <h1 class="titlelogin">For New User</h1>
+    <a href="{% url 'signup' %}" class="btn btn-secondary">Sign up</a>
+</div>
+{% endblock %}
+
+
+

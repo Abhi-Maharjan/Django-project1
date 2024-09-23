@@ -1,0 +1,141 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+    {% block extra_css %}
+    <!-- Additional CSS files can be added here in child templates -->
+    {% endblock %}
+    <title>{% block title %}
+            Base
+            {% endblock title %}
+    </title>
+  </head>
+  <body class="mainbody">
+    <header id="mainheading">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{% url 'Main' %}"><img src="{% static 'app/images/sipalaya.JPG' %} " alt="Sipalaya icon" width=100px></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'Main' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'course'%}">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Aboutus' %}">About Us</a>
+            </li>
+            {% comment %} <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> 
+                Account
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+                <a class="dropdown-item" href="{% url 'login' %}">Sign In</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> {% endcomment %}
+
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Welcome, {{ user.username }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'home' %}">Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </li>
+          {% else %}
+          <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-expanded="false">
+            Account </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{% url 'login' %}">Login</a>
+              <a class="dropdown-item" href="{% url 'signup' %}">Sign Up</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+
+            
+        {% endif %}
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!--<h1>Hello, world!</h1> -->
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  
+    
+
+    <footer>
+      <hr>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <img src ="{% static 'app/images/sipalaya.JPG' %}" alt="">
+                <p class="card-text"><strong> "At Sipalaya, we're dedicated to your success. Master in-demand skills, secure a job, and elevate your career with us. Join today and embark on your path to success."</strong></p>
+
+                <hr>
+                <a href="https://www.instagram.com/sipalaya.infotech/" target="_blank" ><img src="{% static 'app/images/insta.jpg' %}" alt="facebook icon" width=40px></a>
+                
+              <a href="https://www.facebook.com/p/SipalayaIT-Training-Internships-61552857928172/" target="_blank" ><img src="{% static 'app/images/facebook.png' %}" alt="facebook icon" width=40px ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Contact info</strong></h2>
+              <p class="card-text">
+                <h5>
+                  <strong>Address</strong>
+                </h5>
+                <p>  Kathamandu, Nepal</</p>
+                <p><strong>Phone No. :</strong> </p>
+                <p>+97798123456</p>
+                <p><strong>Mail :</strong> </p>
+                <p>Sipalaya.edu.np</p>
+              </p>
+              <a href="https://www.google.com/maps/place/Sipalaya+Info+Tech+Pvt.+Ltd./@27.671523,85.3431704,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb190536c1caa7:0xf92fcf603dac3960!8m2!3d27.671523!4d85.3457453!16s%2Fg%2F11k46lkz8h?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary" target="_blank">Our Location</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <p>
+        Copyright &copy; The Sipalaya
+      </p>
+    </footer>
+  </body>
+</html>

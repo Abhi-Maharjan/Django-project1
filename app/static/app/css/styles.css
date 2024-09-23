@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainheading {
+    background-color: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    
+}
+
+.navbar {
+    background-color: rgb(160, 207, 234);
+}
+
+#bd {
+    background: hsl(341, 7%, 43%);
+    padding: 20px 0px;
+}
+
+#loginform {
+    color: rgb(234, 234, 234);
+    font-size: 40px;
+
+
+}
+
+footer{
+    background-color: #a1c4fd;
+}
+
+
+/* Custom styles for the login form */
+#loginform {
+    padding: 20px;
+    
+}
+
+.loginform-light {
+    /* Add any specific styles you want here */
+    color: #333; /* Example */
+}
+
+/* Custom styles for the titlelogin class */
+.titlelogin {
+    color: #555; /* Example color */
+}
+
+.form-group {
+    background-color: antiquewhite;
+    
+    margin: 0 px 50px;
+
+}
+form {
+    
+    border: 500px;
+    margin: 0 auto;;
+    padding: 0px 50px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    height: 100vh;
+    
+    
+    align-items: center;
+}
+
+.babout {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px; /* Space inside the div */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1000px; /* Limits the width of the div */
+    margin: 20px auto; /* Center align and add space on top and bottom */
+}
+
+.babout h1 {
+    font-family: 'Arial', sans-serif; /* Font for the heading */
+    font-size: 28px; /* Size of the heading text */
+    color: #333; /* Dark grey text color */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center align the heading text */
+}
+
+.babout p {
+    font-family: 'Georgia', serif; /* Font for the paragraph text */
+    font-size: 16px; /* Size of the paragraph text */
+    color: #555; /* Medium grey text color */
+    line-height: 1.6; /* Line height for better readability */
+    text-align: justify; /* Justified text alignment */
+    margin-bottom: 0; /* Removes default bottom margin */
+}
+.babout h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Course section styles */
+ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ol[type="I"] > li {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+aside {
+    margin-left: 40px;
+}
+
+details {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+details summary {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+details ul {
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-type: disc;
+}
+
+details ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Pricing and Duration styles */
+details ul li:last-child {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Miscellaneous */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+
+
+
+#imgs {
+    background-image: url('../images/it3.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items at the top and bottom */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Optional padding */
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center items horizontally */
+    height: 100%;
+    padding: 20px;
+}
+
+#top-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background for readability */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Full width of the container */
+}
+
+#bottom-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background for readability */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Full width of the container */
+    margin-top: auto; /* Pushes the paragraph to the bottom */
+}
+
+
+#imgss {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items at the top and bottom */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Optional padding */
+}
+
+
+.ccontainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.ccard {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ccard img {
+    width: 100%;
+    border-radius: 10px;
+}
+.ccard h2 {
+    margin: 10px 0;
+}
+.ccard p {
+    color: #555;
+}

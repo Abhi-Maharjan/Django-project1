@@ -1,0 +1,282 @@
+{% extends "app/base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+{% endblock %}
+{% block title %}
+Course
+{% endblock title %}
+
+{% block content %}
+<body>
+    <h1><strong>Welcome to Sipalaya</strong></h1>
+        <p>
+            Explore cutting-edge IT courses designed to propel your career forward. Whether you're just starting or looking to specialize, we offer programs that cater to every level.
+        </p>
+    <hr>
+
+    <h3></strong>Our Course</strong></h3>
+    
+            <ol>
+                <li>Software Development</li>
+            
+            <p>
+                <ol type="I">
+                    <li>Full-Stack Web Development</li>
+                    <aside>
+                        <details>
+                            <ul>
+                                <li>Content</li>
+                                    <ul>
+                                        <li>Front-end: HTML, CSS, JavaScript, React</li>
+                                        <li>Back-end: Node.js, Express.js, MongoDB</li>
+                                        <li>Version control with Git and GitHub</li>
+                                    </ul>
+
+                                <li>Duration: 6 months</li>
+                                <li>Price: Nrs.30,000</li>
+                            </ul>
+                        </details>
+                    </aside>
+                    <li>Mobile App Development</li>
+                    <aside>
+                        <details>
+                            <ul>
+                                <li>Content:</li>
+                                <ul>
+                                    <li>iOS development with Swift
+                                    <li>Android development with Kotlin</li>
+                                    <li>Cross-platform development with Flutter</li>
+                                    <li>App deployment on App Store and Google Play</li>
+                                </ul>
+
+                                <li>Duration: 5 Months</li>
+                                <li>Price: Nrs. 25,000</li>
+                            </ul>
+                        </details>
+                    </aside>
+                    
+                </ol>
+            </p>
+        
+        
+            <li>Data Science and Analytics</li>
+
+            <ol>
+                <li type="I">Data Science</li>
+                <aside>
+                    <details>
+                        <ul>
+                            <li>Content:</li>
+                            <ul>
+                                <li>Python for data science</li>
+                                <li>Data visualization with Matplotlib and Seaborn</li>
+                                <li> Machine learning with scikit-learn</li>
+                                <li>SQL for data analysis</li>
+                                <li>Capstone project</li>
+                            </ul>
+                            <li>Duration: 4 Months</li>
+                            <li>Price: Nrs.35,000</li>
+                        </ul>
+                    </details>
+                </aside>
+                <li type="I" >Big Data and Hadoop</li>
+                <aside>
+                    <details>
+                        <ul>
+                            <li>Content</li>
+                            <ul>
+                                <li>Introduction to Big Data</li>
+                                <li>Hadoop ecosystem: HDFS, MapReduce, Hive, Pig</li>
+                                <li>Data processing with Apache Spark</li>
+                                <li>NoSQL databases (HBase, Cassandra)</li>  
+                            </ul>
+                            <li>Duration: 3 Months</li>
+                            <li>Prices: Nrs. 28,000</li>
+                        </ul>
+                    </details>
+                </aside>
+            </ol>
+        
+            <li>cybersecurity</li>
+
+                <ol type="I">
+                    <li>Ethical Hacking and Peenertration Testing</li>
+                    <aside>
+                        <details>
+                            <ul>
+                                <li>Content</li>
+                                <ul>
+                                    <li>Introduction to ethical hacking</li>
+                                    <li>Penetration testing techniques</li>
+                                    <li>Network security and vulnerablitity assessment</li>
+                                    <li>Ethical hacking tools(Metasploit, Wireshark</li>
+                                </ul>
+                                <li>Duration: 3 Months</li>
+                                <li>Price: Nrs25,000</li>
+                            </ul>
+                        </details>
+                    </aside>
+                    <li>Cybersecurity Fundamentals</li>
+                    <aside>
+                        <details>
+                            <ul>
+                                <li>Content</li>
+                                <ul>
+                                    <li>
+                                        Basic of cybersecurity
+                                    </li>
+                                    <li>Network security protocols</li>
+                                    <li>Secure coding practices</li>
+                                    Cybersecurity laws and compliance
+                                </ul>
+
+                                <li>Duration: 2 Months</li>
+                                <li>Price : Nrs. 18,000</li>
+                            </ul>
+                        </details>
+                    </aside>
+                </ol>
+
+    
+</body>
+
+
+
+{% endblock content%}
+
+
+
+
+{% comment %} 
+{% block content %}
+<body>
+    <h1><strong>Welcome to Sipalaya</strong></h1>
+    <p>
+        Explore cutting-edge IT courses designed to propel your career forward. Whether you're just starting or looking to specialize, we offer programs that cater to every level.
+    </p>
+    <hr>
+
+    <h3><strong>Our Courses</strong></h3>
+    
+    <details>
+        <summary>
+            <h4>Software Development</h4>
+        </summary>
+        <ol>
+            <li>Full-Stack Web Development</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content</li>
+                    <ul>
+                        <li>Front-end: HTML, CSS, JavaScript, React</li>
+                        <li>Back-end: Node.js, Express.js, MongoDB</li>
+                        <li>Version control with Git and GitHub</li>
+                    </ul>
+                    <li>Duration: 6 months</li>
+                    <li>Price: Nrs. 30,000</li>
+                </ul>
+            </details>
+
+            <li>Mobile App Development</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content:</li>
+                    <ul>
+                        <li>iOS development with Swift</li>
+                        <li>Android development with Kotlin</li>
+                        <li>Cross-platform development with Flutter</li>
+                        <li>App deployment on App Store and Google Play</li>
+                    </ul>
+                    <li>Duration: 5 months</li>
+                    <li>Price: Nrs. 25,000</li>
+                </ul>
+            </details>
+        </ol>
+    </details>
+    
+    <details>
+        <summary>
+            <h4>Data Science and Analytics</h4>
+        </summary>
+        <ol>
+            <li>Data Science</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content:</li>
+                    <ul>
+                        <li>Python for data science</li>
+                        <li>Data visualization with Matplotlib and Seaborn</li>
+                        <li>Machine learning with scikit-learn</li>
+                        <li>SQL for data analysis</li>
+                        <li>Capstone project</li>
+                    </ul>
+                    <li>Duration: 4 months</li>
+                    <li>Price: Nrs. 35,000</li>
+                </ul>
+            </details>
+
+            <li>Big Data and Hadoop</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content:</li>
+                    <ul>
+                        <li>Introduction to Big Data</li>
+                        <li>Hadoop ecosystem: HDFS, MapReduce, Hive, Pig</li>
+                        <li>Data processing with Apache Spark</li>
+                        <li>NoSQL databases (HBase, Cassandra)</li>
+                    </ul>
+                    <li>Duration: 3 months</li>
+                    <li>Price: Nrs. 28,000</li>
+                </ul>
+            </details>
+        </ol>
+    </details>
+    
+    <details>
+        <summary>
+            <h4>Cybersecurity</h4>
+        </summary>
+        <ol>
+            <li>Ethical Hacking and Penetration Testing</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content:</li>
+                    <ul>
+                        <li>Introduction to ethical hacking</li>
+                        <li>Penetration testing techniques</li>
+                        <li>Network security and vulnerability assessment</li>
+                        <li>Ethical hacking tools (Metasploit, Wireshark)</li>
+                    </ul>
+                    <li>Duration: 3 months</li>
+                    <li>Price: Nrs. 25,000</li>
+                </ul>
+            </details>
+
+            <li>Cybersecurity Fundamentals</li>
+            <details>
+                <summary>More details</summary>
+                <ul>
+                    <li>Content:</li>
+                    <ul>
+                        <li>Basics of cybersecurity</li>
+                        <li>Network security protocols</li>
+                        <li>Secure coding practices</li>
+                        <li>Cybersecurity laws and compliance</li>
+                    </ul>
+                    <li>Duration: 2 months</li>
+                    <li>Price: Nrs. 18,000</li>
+                </ul>
+            </details>
+        </ol>
+    </details>
+
+</body>
+{% endblock content %} {% endcomment %}
